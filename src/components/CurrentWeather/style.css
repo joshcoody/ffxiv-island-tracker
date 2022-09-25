@@ -1,0 +1,36 @@
+.weatherRow {
+  display: grid;
+  grid-template-columns: [localDate] 1fr [localTime] 3fr [previousEorzeaTime] 1fr [previousWeather] 1fr [eorzeaTime] 1fr [currentWeather] 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "localDate localTime previousEorzeaTime previousWeather eorzeaTime currentWeather"
+    "matchingAnimals matchingAnimals matchingAnimals matchingAnimals matchingAnimals matchingAnimals";
+  column-gap: 1fr;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem 2rem;
+  border: 1px solid #ccc;
+}
+
+.weatherRow:not(:last-child) {
+  border-bottom: none;
+}
+
+.matchingAnimals {
+  grid-area: matchingAnimals;
+}
+
+.matchingAnimals:not(:empty) {
+  padding: 0 2rem;
+  margin-top: 1rem;
+  border-top: 1px solid #dadada;
+}
+
+.availableAnimal {
+  display: grid;
+  grid-template-columns: [name] 1fr [location] 1fr [restraint] 1fr [spawnTime] 1fr [weather] 1fr;
+  padding: 0.5rem 0;
+}
+
+.availableAnimal:not(:last-child) {
+  border-bottom: 1px solid #ececec;
+}

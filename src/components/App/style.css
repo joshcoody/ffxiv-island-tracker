@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.controls {
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.findWeather {
+  font-size: 20px;
+  border: 1px solid rgb(0, 121, 162);
+  background: rgb(1, 114, 152);
+  color: #ffffff;
+  padding: 0.75rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
+}
+
+.findWeather:hover {
+  border: 1px solid rgb(14, 115, 149);
+  background: rgb(31, 154, 195);
+}
+
+.noWeather {
+  display: block;
+  margin: 1rem auto;
+  font-size: 20px;
+  text-align: center;
+}

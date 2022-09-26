@@ -22,6 +22,8 @@ export const App: Component = () => {
         >
           Find weather
         </button>
+        <br />
+        <br />
         <label for="weatherOnly">
           <input
             id="weatherOnly"
@@ -31,7 +33,7 @@ export const App: Component = () => {
               setShowWeatherOnly(event.currentTarget.checked);
             }}
           />{" "}
-          Show weather-based only
+          Show only animals with weather requirements
         </label>
       </div>
       <br />

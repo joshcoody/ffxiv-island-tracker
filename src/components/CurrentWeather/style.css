@@ -1,6 +1,6 @@
 .weatherRow {
   display: grid;
-  grid-template-columns: [localDate] 1fr [localTime] 3fr [previousEorzeaTime] 1fr [previousWeather] 1fr [eorzeaTime] 1fr [currentWeather] 1fr;
+  grid-template-columns: [localDate] 2fr [previousEorzeaTime] 1fr [previousWeather] 1fr [eorzeaTime] 1fr [currentWeather] 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
     "localDate localTime previousEorzeaTime previousWeather eorzeaTime currentWeather"
@@ -22,7 +22,7 @@
 .matchingAnimals:not(:empty) {
   padding: 0 2rem;
   margin-top: 1rem;
-  border-top: 1px solid #dadada;
+  /* border-top: 1px solid #dadada; */
 }
 
 .availableAnimal {
@@ -33,4 +33,16 @@
 
 .availableAnimal:not(:last-child) {
   border-bottom: 1px solid #ececec;
+}
+
+fieldset {
+  border: 0;
+}
+
+fieldset legend {
+  font-weight: bold;
+}
+
+.availableAnimal:not(:first-child) fieldset legend {
+  display: none;
 }
